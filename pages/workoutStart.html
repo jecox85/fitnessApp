@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bodyweight Fitness</title>
+    <title>Bodyweight Fitness: Start Page</title>
     <link rel="stylesheet" href="../css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,26 +38,92 @@
     </li>
 </ul>
 <!-- Content -->
-<div class="container grey-text">
-    <h5 class="center">Choose Progressions</h5>
+<div class="container">
+    <h5 class="center-align">Choose Progressions</h5>
+    <p>Items listed in recommended progression order.</p>
 </div>
 <!--start form here-->
-<p>
-    <span class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias aliquam autem consequuntur dolores eaque
-    esse eum excepturi fugit iusto laboriosam magnam, natus nobis numquam, officia, porro quae qui reiciendis
-    repellendus soluta tenetur voluptate voluptatum. Ad, adipisci aliquid atque consectetur debitis deserunt dolore
-    dolorem doloribus earum enim eos esse expedita illo in ipsa iure laudantium magni, maxime minus modi nam nobis
-    pariatur possimus quae quam quasi quis quisquam rerum saepe sequi tenetur ullam, voluptates voluptatibus. A
-    accusantium animi, architecto assumenda at aut, consectetur corporis cumque debitis dicta dignissimos dolorem
-    fugiat id ipsum iste iusto laudantium magnam molestiae molestias necessitatibus, nobis nostrum nulla odit possimus
-    quaerat quam quas quidem quis ratione repellendus rerum soluta unde vel vitae voluptas voluptatem voluptatibus.</span>
-</p>
+<div class="container">
+    <!--pull-up progression select-->
+    <label for="pull-up-select">Pull-up progression</label>
+    <select class="browser-default" name="pull-ups" id="pull-up-select">
+        <option value="">--Please choose an option--</option>
+        <option value="0">Scapular Pulls</option>
+        <option value="1">Arch Hangs</option>
+        <option value="2">Pull-up Negatives</option>
+        <option value="3">Pull-ups</option>
+        <option value="4">Weighted Pull-ups</option>
+    </select>
+    <!--squat progression select-->
+    <label for="squat-select">Squat progression</label>
+    <select class="browser-default" name="squats" id="squat-select">
+        <option value="">--Please choose an option--</option>
+        <option value="0">Assisted Squat</option>
+        <option value="1">Squat</option>
+        <option value="2">Split Squat</option>
+        <option value="3">Bulgarian Split Squat</option>
+        <option value="4">Beginner Shrimp Squat</option>
+        <option value="5">Intermediate Shrimp Squat</option>
+        <option value="6">Advanced Shrimp Squat</option>
+        <option value="7">Weighted Shrimp Squats</option>
+    </select>
+    <!--dip progression select-->
+    <label for="dip-select">Dip progression</label>
+    <select class="browser-default" name="dips" id="dip-select">
+        <option value="">--Please choose an option--</option>
+        <option value="0">Parallel Bar Support Hold</option>
+        <option value="1">Negative Dips</option>
+        <option value="2">Parallel Bar Dips</option>
+        <option value="3">Weighted Dips</option>
+    </select>
+    <!--hinge progression select-->
+    <label for="hinge-select">Hinge progression</label>
+    <select class="browser-default" name="hinges" id="hinge-select">
+        <option value="">--Please choose an option--</option>
+        <option value="0">Romanian Deadlift</option>
+        <option value="1">Single Legged Deadlift</option>
+        <option value="2">Banded Nordic Curl Negatives</option>
+        <option value="3">Banded Nordic Curl</option>
+        <option value="4">Nordic Curls</option>
+    </select>
+    <!--row progression select-->
+    <label for="row-select">Row progression</label>
+    <select class="browser-default" name="rows" id="row-select">
+        <option value="">--Please choose an option--</option>
+        <option value="0">Vertical Rows</option>
+        <option value="1">Incline Rows</option>
+        <option value="2">Horizontal Rows</option>
+        <option value="3">Wide Rows</option>
+        <option value="4">Weighted Inverted Rows</option>
+    </select>
+    <!--push-up progression select-->
+    <label for="push-up-select">Push-up progression</label>
+    <select class="browser-default" name="push-ups" id="push-up-select">
+        <option value="">--Please choose an option--</option>
+        <option value="0">Vertical Push-up</option>
+        <option value="1">Incline Push-up</option>
+        <option value="2">Full Push-up</option>
+        <option value="3">Diamond Push-up</option>
+        <option value="4">Pseudo Planche Push-up</option>
+    </select>
+    <!--anti-extension progression select-->
+    <label for="anti-extension-select">Anti-extension progression</label>
+    <select class="browser-default" name="anti-extensions" id="anti-extension-select">
+        <option value="">--Please choose an option--</option>
+        <option value="0">Plank</option>
+        <option value="1">Ring Ab Rollouts</option>
+    </select>
+</div>
+
+
+
 <br>
 <div class="container center-align">
-    <a class="waves-effect waves-light btn" href="/">Begin</a>
+    <a class="waves-effect waves-light btn blue darken-3" href="workoutPage.html">Begin</a>
 </div>
 
 <script src="../js/ui.js" type="text/javascript"></script>
+
 
 </body>
 
