@@ -3,7 +3,7 @@
     "short_name": "BWF RR",
     "description": "Bodyweight Fitness Recommended Routine as found on Reddit",
     "start_url": "/index.html",
-    "scope": ".",
+    "scope": "/",
     "display": "fullscreen",
     "orientation": "portrait-primary",
     "background_color": "#F5F5F5",
