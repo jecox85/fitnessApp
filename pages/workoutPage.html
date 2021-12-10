@@ -63,28 +63,21 @@
 <script src="../js/ui.js" type="text/javascript"></script>
 <script src="../js/exercises.js" type="text/javascript"></script>
 <script>
-    const testClass = [
-        ...warmUps,
-        ...pullUpProgression,
-        ...squatProgression,
-        ...dipProgression,
-        ...hingeProgression,
-        ...rowProgression,
-        ...pushUpProgression,
-        ...antiExtensionProgression,
-        ...antiRotationProgression,
-        ...extensionProgression
-    ];
+
+    let currentSession  = JSON.parse(sessionStorage.getItem("currentWorkout"));
+    if(currentSession === null){
+        currentSession = [...warmUps];
+    }
     let myIterator = 0;
     document.querySelector('#nextBtn').addEventListener('click', function(){
-        if(myIterator < testClass.length) {
+        if(myIterator < (currentSession.length - 1)) {
             myIterator++;
         }
-        document.querySelector('#mySection').innerText = testClass[myIterator].section;
-        document.querySelector('#myName').innerText = testClass[myIterator].name;
-        document.querySelector('#myImg').src = testClass[myIterator].imgLocation;
-        document.querySelector('#myGeneralForm').innerHTML = testClass[myIterator].generalForm;
-        document.querySelector('#myNotes').innerHTML = testClass[myIterator].notes;
+        document.querySelector('#mySection').innerText = currentSession[myIterator].section;
+        document.querySelector('#myName').innerText = currentSession[myIterator].name;
+        document.querySelector('#myImg').src = currentSession[myIterator].imgLocation;
+        document.querySelector('#myGeneralForm').innerHTML = currentSession[myIterator].generalForm;
+        document.querySelector('#myNotes').innerHTML = currentSession[myIterator].notes;
     })
 </script>
 

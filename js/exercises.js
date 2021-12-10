@@ -572,3 +572,4 @@ const extensionProgression = [
         imgLocation: "/img/exercises/extensionProgression/reverseHyperextension.gif"
     }
 ]
+
