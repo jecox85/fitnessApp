@@ -48,15 +48,6 @@
     <button onclick id="nextBtn" class="waves-effect waves-light btn blue darken-3">Next</button>
 </div>
 
-<!--     section: "",-->
-<!--     name: "",-->
-<!--     generalForm: "",-->
-<!--     notes: "",-->
-<!--     reps: 0,-->
-<!--/    imgLocation: ""-->
-
-
-
 <script src="../js/ui.js" type="text/javascript"></script>
 <script src="../js/exercises.js" type="text/javascript"></script>
 <script>
@@ -67,9 +58,6 @@
     }
     let myIterator = 0;
     document.querySelector('#nextBtn').addEventListener('click', function(){
-        // if(myIterator < (currentSession.length - 1)) {
-        //     myIterator++;
-        // }
         myIterator++;
         if(myIterator === (currentSession.length - 1)){
             document.querySelector('#nextBtn').innerText = 'Complete';
@@ -79,6 +67,7 @@
             sessionStorage.setItem("currentWorkout", JSON.stringify(currentSession));
             window.location.href = "completed.html";
         }
+        //populate page with next workout
         document.querySelector('#mySection').innerText = currentSession[myIterator].section;
         document.querySelector('#myName').innerText = currentSession[myIterator].name;
         document.querySelector('#myImg').src = currentSession[myIterator].imgLocation;

@@ -4,7 +4,7 @@ if('serviceWorker' in navigator){
     //defer service working installation until page completes loading
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js').then((reg) =>{
-            console.log(`Service worker registration (Scope: ${reg.scope}`);
+            //console.log(`Service worker registration (Scope: ${reg.scope}`);
         }).catch(error => {
             console.log(`Service Worker Error (${error})`);
         });

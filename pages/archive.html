@@ -46,13 +46,9 @@
 </div>
 
 
-
 <script src="../js/ui.js" type="text/javascript"></script>
 <script src="/js/app.js"></script>
-
-
 <!-- Firebase stuff -->
-
 <script type="module">
     let saveButton = document.querySelector("#saveBtn");
     
@@ -88,38 +84,14 @@
     }
     const workoutList = document.querySelector('#workout-table');
 
-
+    //Shows the list of the workouts in the database and adds an x that allows for deletion
     function renderWorkouts(dc){
         let newTr = document.createElement("tr");
-        // let li = document.createElement("li");
-        // let thisDate = document.createElement("span");
-        // let thisUser = document.createElement("span");
         let cross = document.createElement('td');
         cross.innerText = 'x';
-
-
-
-
         cross.setAttribute('data-id', dc.id);
-        //cross.textContent = 'x';
         newTr.innerHTML = `<td>${dc.data().user}</td><td>${dc.data().Date}</td>`;
         newTr.appendChild(cross);
-        // thisDate.textContent = dc.data().Date;
-        // thisUser.textContent = dc.data().user;
-
-        //this shows how to do something with the saved array for future use
-        // let workoutArray = JSON.parse(doc.workout);
-        // console.log(workoutArray);
-        // for (let arrayItem of workoutArray){
-        //     let thisWorkout = document.createElement("span");
-        //     console.log(arrayItem.name);
-        // }
-        
-
-        // li.appendChild(thisDate);
-        // li.appendChild(thisUser);
-        // li.appendChild(cross);
-
         workoutList.appendChild(newTr);
 
         cross.addEventListener('click', (e) =>{
