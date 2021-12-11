@@ -1,1 +1,4 @@
 .idea
+/public
+firebase.json
+.firebaserc
