@@ -3,7 +3,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Shoulder Band Warmup",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/shoulderBandWarmup.gif"
@@ -11,7 +11,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Squat Sky Reaches",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/squatSkyReaches.gif"
@@ -19,7 +19,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Finger Pulses",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/1.FingerPulses.gif"
@@ -27,7 +27,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Palm Pulses",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/2.PalmPulses.gif"
@@ -35,7 +35,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Side-to-Side Palm Rotations",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/3.SideToSidePalmRotations.gif"
@@ -43,7 +43,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Front Facing Elbow Rotations",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/4.FrontFacingElbowRotations.gif"
@@ -51,7 +51,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Side-to-Side Wrist Stretch",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/5.SideToSideWristStretch.gif"
@@ -59,7 +59,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Rear Facing Wrist Stretch - Palms Down",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/6.RearFacingWristStretchPalmsDown.gif"
@@ -67,7 +67,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Rear Facing Wrist Stretch - Palms Up",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/7.RearFacingWristStretchPalmsUp.gif"
@@ -75,7 +75,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Rear Facing Elbow Rotations",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/8.RearFacingElbowRotations.gif"
@@ -83,7 +83,7 @@ const warmUps = [
     {
         section: "Warm-up",
         name: "Rear Facing Wrist Stretch",
-        generalForm: "",
+        generalForm: "<ul class ='browser-default'><li>Use the GIF as a reference for the current stretch.</li></ul>",
         notes: "",
         reps: 0,
         imgLocation: "/img/exercises/WarmUp/WristPrep/9.ForwardFacingWristStretch.gif"
