@@ -1,5 +1,5 @@
-const dynamicCache = 'Dynamic-cache-v2';
-const staticCache = 'Static-cache-v2';
+const dynamicCache = 'Dynamic-cache-v7';
+const staticCache = 'Static-cache-v7';
 const assets = [
     '/',
     '/index.html',
@@ -7,6 +7,7 @@ const assets = [
     '/js/exercises.js',
     '/js/materialize.min.js',
     '/js/ui.js',
+    '/js/db.js',
     '/css/app.css',
     '/css/materialize.min.css',
     '/pages/fallback.html',
@@ -54,17 +55,19 @@ self.addEventListener('fetch', function(event){
     //fires whenever the app requests a resource (file or data)
     //console.log(`SW: Fetching ${event.request.url}`);
     //next, go get the requested resource from the network.
-    event.respondWith(
-        caches.match(event.request).then((response) => {
-            return (
-                response || fetch(event.request).then((fetchRes) => {
-                    return caches.open(dynamicCache).then((cache) =>{
-                        cache.put(event.request.url, fetchRes.clone());
-                        limitCacheSize(dynamicCache, 10)
-                        return fetchRes;
-                    });
-                })
-            );
-        }).catch(() => caches.match('/pages/fallback.html'))
-    );  
+    if(event.request.url.indexOf("firestore.goodleapis.com") === -1) {
+        event.respondWith(
+            caches.match(event.request).then((response) => {
+                return (
+                    response || fetch(event.request).then((fetchRes) => {
+                        return caches.open(dynamicCache).then((cache) =>{
+                            cache.put(event.request.url, fetchRes.clone());
+                            limitCacheSize(dynamicCache, 20)
+                            return fetchRes;
+                        });
+                    })
+                );
+            }).catch(() => caches.match('/pages/fallback.html'))
+        ); 
+    } 
 });
