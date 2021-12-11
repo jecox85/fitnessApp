@@ -30,6 +30,7 @@
     <li><a class="subheader">BODYWEIGHT FITNESS</a></li>
     <li><a href="/index.html" class="waves-effect">Home</a></li>
     <li><a href="/pages/workoutStart.html" class="waves-effect">Start Workout</a>
+    <li><a href="/pages/archive.html" class="waves-effect">History</a>
     <li><a href="/pages/about.html" class="waves-effect">About</a></li>
     </li>
 </ul>
@@ -66,8 +67,17 @@
     }
     let myIterator = 0;
     document.querySelector('#nextBtn').addEventListener('click', function(){
-        if(myIterator < (currentSession.length - 1)) {
-            myIterator++;
+        // if(myIterator < (currentSession.length - 1)) {
+        //     myIterator++;
+        // }
+        myIterator++;
+        if(myIterator === (currentSession.length - 1)){
+            document.querySelector('#nextBtn').innerText = 'Complete';
+        }
+        //go to completed page when workout is done
+        if(myIterator >= (currentSession.length)){
+            sessionStorage.setItem("currentWorkout", JSON.stringify(currentSession));
+            window.location.href = "completed.html";
         }
         document.querySelector('#mySection').innerText = currentSession[myIterator].section;
         document.querySelector('#myName').innerText = currentSession[myIterator].name;
