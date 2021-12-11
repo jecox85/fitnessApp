@@ -1,5 +1,5 @@
-const dynamicCache = 'Dynamic-cache-v5';
-const staticCache = 'Static-cache-v5';
+const dynamicCache = 'Dynamic-cache-v7';
+const staticCache = 'Static-cache-v7';
 const assets = [
     '/',
     '/index.html',
@@ -11,7 +11,6 @@ const assets = [
     '/js/db.js',
     '/css/app.css',
     '/css/materialize.min.css',
-    '/pages/start.html',
     '/pages/fallback.html',
     '/pages/about.html',
     '/pages/workoutPage.html',
